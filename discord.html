@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reapercraft | Join Discord</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        :root { --primary: #cf152b; --bg-dark: #0f0f12; --bg-card: #18181f; --text-light: #ffffff; --text-gray: #a0a0a5; --discord: #5865F2; }
+        body { background-color: var(--bg-dark); color: var(--text-light); padding-top: 100px; }
+        
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background: #18181f; border-bottom: 2px solid var(--primary); position: fixed; width: 100%; top: 0; z-index: 1000; }
+        .logo { font-size: 24px; font-weight: 800; text-transform: uppercase; }
+        .logo span { color: var(--primary); }
+        nav a { color: var(--text-light); text-decoration: none; margin-left: 20px; font-weight: 600; }
+        nav a:hover, nav a.active { color: var(--primary); }
+
+        section { padding: 50px 8%; text-align: center; display: flex; justify-content: center; align-items: center; min-height: 70vh; }
+        .discord-box { background: #1a1c24; max-width: 600px; padding: 50px; border-radius: 12px; border: 2px solid var(--discord); box-shadow: 0 10px 40px rgba(88, 101, 242, 0.15); }
+        .discord-box i { font-size: 5rem; color: var(--discord); margin-bottom: 20px; }
+        .discord-box h2 { font-size: 2.3rem; margin-bottom: 15px; }
+        .discord-box p { color: var(--text-gray); margin-bottom: 30px; }
+        
+        .btn-discord { display: inline-block; padding: 15px 40px; background: var(--discord); color: white; text-decoration: none; font-weight: 600; border-radius: 5px; text-transform: uppercase; transition: 0.3s; }
+        .btn-discord:hover { transform: translateY(-3px); box-shadow: 0 5px 20px rgba(88, 101, 242, 0.4); }
+
+        footer { background: #09090b; padding: 25px; text-align: center; color: var(--text-gray); font-size: 0.9rem; border-top: 1px solid #18181f; margin-top: 40px; }
+        @media (max-width: 900px) { nav { display: none; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Reaper<span>craft</span></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="hosting.html">Hosting</a>
+            <a href="server.html">Server</a>
+            <a href="store.html">Store</a>
+            <a href="discord.html" class="active">Discord</a>
+            <a href="support.html">Support</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="discord-box">
+            <i class="fab fa-discord"></i>
+            <h2>Join Our Community</h2>
+            <p>Get instant updates, participate in active server giveaways, chat with fellow Minecraft players, and hang out with our staff team directly.</p>
+            <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn-discord"><i class="fab fa-discord"></i> Connect Account</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Reapercraft Store. Not affiliated with Mojang Studios.</p>
+    </footer>
+
+</body>
+</html>

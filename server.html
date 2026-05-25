@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reapercraft | Our Server</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        :root { --primary: #cf152b; --bg-dark: #0f0f12; --bg-card: #18181f; --text-light: #ffffff; --text-gray: #a0a0a5; }
+        body { background-color: var(--bg-dark); color: var(--text-light); padding-top: 100px; }
+        
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background: #18181f; border-bottom: 2px solid var(--primary); position: fixed; width: 100%; top: 0; z-index: 1000; }
+        .logo { font-size: 24px; font-weight: 800; text-transform: uppercase; }
+        .logo span { color: var(--primary); }
+        nav a { color: var(--text-light); text-decoration: none; margin-left: 20px; font-weight: 600; }
+        nav a:hover, nav a.active { color: var(--primary); }
+
+        section { padding: 50px 8%; text-align: center; }
+        .server-box { background: var(--bg-card); border: 1px solid #2a2a35; padding: 40px; border-radius: 12px; max-width: 700px; margin: 0 auto 40px; }
+        .server-box h2 { text-transform: uppercase; margin-bottom: 15px; color: var(--primary); }
+        
+        .ip-bar { background: #0f0f12; border: 2px dashed #3a3a45; padding: 15px; font-size: 1.3rem; font-weight: 800; letter-spacing: 1px; color: #fff; border-radius: 6px; margin: 25px 0; display: flex; justify-content: space-around; align-items: center; }
+        .status { color: #2ecc71; font-weight: 600; margin-top: 10px; }
+
+        .gamemodes { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 30px; }
+        .mode-card { background: #13131a; padding: 20px; border-radius: 8px; border: 1px solid #2a2a35; }
+        .mode-card i { font-size: 2rem; color: var(--primary); margin-bottom: 10px; }
+
+        footer { background: #09090b; padding: 25px; text-align: center; color: var(--text-gray); font-size: 0.9rem; border-top: 1px solid #18181f; margin-top: 40px; }
+        @media (max-width: 900px) { nav { display: none; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Reaper<span>craft</span></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="hosting.html">Hosting</a>
+            <a href="server.html" class="active">Server</a>
+            <a href="store.html">Store</a>
+            <a href="discord.html">Discord</a>
+            <a href="support.html">Support</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="server-box">
+            <h2>Join Our Minecraft Server</h2>
+            <p style="color: var(--text-gray);">Play with hundreds of active players on our highly optimized community server.</p>
+            
+            <div class="ip-bar">
+                <span><i class="fas fa-sign-in-alt" style="color: var(--primary);"></i> play.reapercraft.com</span>
+                <span style="font-size: 1rem; color: var(--text-gray);">Port: 19132</span>
+            </div>
+            
+            <p class="status"><i class="fas fa-circle"></i> Server Online (Java & Bedrock Crossplay)</p>
+        </div>
+
+        <h3 style="font-size: 2rem; text-transform: uppercase; margin-bottom: 20px;">Our <span>Gamemodes</span></h3>
+        <div class="gamemodes">
+            <div class="mode-card">
+                <i class="fas fa-gavel"></i>
+                <h4>Survival OP</h4>
+                <p style="color: var(--text-gray); font-size: 0.9rem; margin-top: 5px;">Custom quests, skills, and land claims.</p>
+            </div>
+            <div class="mode-card">
+                <i class="fas fa-shield-alt"></i>
+                <h4>Lifesteal</h4>
+                <p style="color: var(--text-gray); font-size: 0.9rem; margin-top: 5px;">Kill players to steal hearts. Pure PvP.</p>
+            </div>
+            <div class="mode-card">
+                <i class="fas fa-cube"></i>
+                <h4>Skyblock</h4>
+                <p style="color: var(--text-gray); font-size: 0.9rem; margin-top: 5px;">Build your infinite floating empire.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Reapercraft Store. Not affiliated with Mojang Studios.</p>
+    </footer>
+
+</body>
+</html>
